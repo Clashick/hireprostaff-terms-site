@@ -86,7 +86,7 @@ body {
 .terms-text {
     font-family: 'Georgia', 'Times New Roman', serif;
     font-size: 1.05rem;
-    line-height: 1.8;
+    line-height: 1.55;
     color: var(--text-color);
     margin: 0;
     padding: 0;
@@ -97,7 +97,7 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
-    margin: 1rem 0;
+    margin: 0.7rem 0 0.7rem 0;
     color: var(--header-bg);
     letter-spacing: 0.5px;
 }
@@ -106,8 +106,8 @@ body {
 .part-header {
     font-size: 1.35rem;
     font-weight: 700;
-    margin: 2.5rem 0 1rem 0;
-    padding: 0.75rem 0;
+    margin: 1.5rem 0 0.7rem 0;
+    padding: 0.5rem 0;
     border-bottom: 3px solid var(--header-bg);
     color: var(--header-bg);
     text-transform: uppercase;
@@ -118,7 +118,7 @@ body {
 .section-header {
     font-size: 1.25rem;
     font-weight: 700;
-    margin: 2rem 0 0.75rem 0;
+    margin: 1.1rem 0 0.5rem 0;
     color: #2c3e50;
     line-height: 1.4;
 }
@@ -127,7 +127,7 @@ body {
 .subsection-header {
     font-size: 1.15rem;
     font-weight: 600;
-    margin: 1.5rem 0 0.5rem 0;
+    margin: 0.8rem 0 0.3rem 0;
     color: #34495e;
     line-height: 1.4;
 }
@@ -136,50 +136,50 @@ body {
 .all-caps-notice {
     font-size: 1.1rem;
     font-weight: 700;
-    margin: 1.5rem 0;
-    padding: 1rem;
+    margin: 0.8rem 0;
+    padding: 0.6rem;
     background-color: #fff3cd;
     border-left: 4px solid #ffc107;
     color: #856404;
-    line-height: 1.6;
+    line-height: 1.4;
 }
 
 /* Definition Lines */
 .definition-line {
     font-size: 1.05rem;
-    margin: 0.5rem 0 0.5rem 1rem;
-    line-height: 1.7;
+    margin: 0.2rem 0 0.2rem 1rem;
+    line-height: 1.5;
     font-style: italic;
 }
 
 /* List Items */
 .list-item {
     font-size: 1.05rem;
-    margin: 0.3rem 0 0.3rem 2rem;
-    line-height: 1.7;
+    margin: 0.1rem 0 0.1rem 2rem;
+    line-height: 1.5;
 }
 
 /* Emphasis Lines */
 .emphasis-line {
     font-size: 1.05rem;
     font-weight: 600;
-    margin: 1rem 0;
-    padding: 0.75rem;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
     background-color: #e7f3ff;
     border-left: 4px solid #2c3e50;
-    line-height: 1.7;
+    line-height: 1.4;
 }
 
 /* Regular Lines */
 .regular-line {
     font-size: 1.05rem;
-    margin: 0.2rem 0;
-    line-height: 1.8;
+    margin: 0.07rem 0;
+    line-height: 1.55;
 }
 
 /* Empty Lines for Spacing */
 .empty-line {
-    margin: 0.5rem 0;
+    margin: 0.2rem 0;
     line-height: 1;
 }
 
