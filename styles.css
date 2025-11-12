@@ -90,6 +90,9 @@ body {
     color: var(--text-color);
     margin: 0;
     padding: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 100%;
 }
 
 /* Document Header */
@@ -106,38 +109,44 @@ body {
 .part-header {
     font-size: 1.35rem;
     font-weight: 700;
-    margin: 1.5rem 0 0.7rem 0;
-    padding: 0.5rem 0;
+    margin: 1rem 0 0.5rem 0;
+    padding: 0.4rem 0;
     border-bottom: 3px solid var(--header-bg);
     color: var(--header-bg);
     text-transform: uppercase;
     letter-spacing: 1px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 /* Section Headers (1. Title, 2. Title, etc.) */
 .section-header {
     font-size: 1.25rem;
     font-weight: 700;
-    margin: 0.9rem 0 0.4rem 0;
+    margin: 0.5rem 0 0.2rem 0;
     color: #2c3e50;
     line-height: 1.4;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 /* Subsection Headers (1.1, 5.2.1, etc.) */
 .subsection-header {
     font-size: 1.15rem;
     font-weight: 600;
-    margin: 0.4rem 0 0.25rem 0;
+    margin: 0.2rem 0 0.1rem 0;
     color: #34495e;
     line-height: 1.4;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 /* All Caps Notices */
 .all-caps-notice {
     font-size: 1.05rem;
     font-weight: 700;
-    margin: 0.8rem 0;
-    padding: 0.7rem 0.8rem;
+    margin: 0.5rem 0;
+    padding: 0.6rem 0.7rem;
     background-color: #fff3cd;
     border-left: 4px solid #ffc107;
     color: #856404;
@@ -145,14 +154,18 @@ body {
     word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: normal;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 /* Definition Lines */
 .definition-line {
     font-size: 1.05rem;
-    margin: 0.2rem 0 0.2rem 1rem;
+    margin: 0.05rem 0 0.05rem 1rem;
     line-height: 1.5;
     font-style: italic;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 /* List Items */
@@ -166,27 +179,31 @@ body {
 .emphasis-line {
     font-size: 1.05rem;
     font-weight: 600;
-    margin: 0.5rem 0;
-    padding: 0.6rem 0.8rem;
+    margin: 0.3rem 0;
+    padding: 0.5rem 0.7rem;
     background-color: #e7f3ff;
     border-left: 4px solid #2c3e50;
     line-height: 1.5;
     word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: normal;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 /* Regular Lines */
 .regular-line {
     font-size: 1.05rem;
-    margin: 0.07rem 0;
+    margin: 0.03rem 0;
     line-height: 1.55;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 /* Empty Lines for Spacing */
 .empty-line {
-    margin: 0.2rem 0;
-    line-height: 1;
+    margin: 0.1rem 0;
+    line-height: 0.5;
 }
 
 /* Footer and Back to Top Button */
