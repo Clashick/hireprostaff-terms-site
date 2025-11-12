@@ -72,6 +72,9 @@ body {
     box-shadow: 0 4px 16px var(--shadow-light);
     padding: 3rem;
     position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Loading State */
@@ -92,7 +95,11 @@ body {
     padding: 0;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    word-break: break-word;
     width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    white-space: normal;
 }
 
 /* Document Header */
@@ -103,6 +110,9 @@ body {
     margin: 0.1rem 0 0.1rem 0;
     color: var(--header-bg);
     letter-spacing: 0.5px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
 }
 
 /* Part Headers (PART A, PART B, etc.) */
@@ -166,6 +176,7 @@ body {
     font-style: italic;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    max-width: calc(100% - 1rem);
 }
 
 /* List Items */
@@ -173,6 +184,9 @@ body {
     font-size: 1.05rem;
     margin: 0.005rem 0 0.005rem 2rem;
     line-height: 1.05;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: calc(100% - 2rem);
 }
 
 /* Emphasis Lines */
@@ -198,6 +212,7 @@ body {
     line-height: 1.05;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    max-width: 100%;
 }
 
 /* Empty Lines for Spacing */
