@@ -16,8 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
             // Hide loading message
             loadingElement.style.display = 'none';
             
-            // Display the text exactly as is
-            termsContent.textContent = text;
+            // Format the text for better readability while preserving ALL content
+            const formattedHTML = formatTermsText(text);
+            termsContent.innerHTML = formattedHTML;
             
             // Show the content
             termsContent.style.display = 'block';
@@ -47,3 +48,63 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+function formatTermsText(text) {
+    // Escape HTML to preserve all content exactly
+    const escapeHtml = (str) => {
+        const div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
+    };
+    
+    const lines = text.split('\n');
+    let html = '';
+    
+    for (let i = 0; i < lines.length; i++) {
+        const line = lines[i];
+        const trimmed = line.trim();
+        
+        // Main document header (first few lines)
+        if (trimmed.startsWith('HIREPROSTAFF (PTY) LTD')) {
+            html += `<div class="doc-header">${escapeHtml(line)}</div>\n`;
+        }
+        // PART headers (e.g., "PART A: GENERAL PROVISIONS")
+        else if (trimmed.match(/^PART [A-Z]:/)) {
+            html += `<div class="part-header">${escapeHtml(line)}</div>\n`;
+        }
+        // Main section numbers (e.g., "1. Definitions and Interpretation")
+        else if (trimmed.match(/^(\d+)\.\s+[A-Z]/)) {
+            html += `<div class="section-header">${escapeHtml(line)}</div>\n`;
+        }
+        // Subsection numbers (e.g., "1.1 Definitions", "5.2.1 Title")
+        else if (trimmed.match(/^(\d+)\.(\d+)(\.\d+)?\s+[A-Z]/)) {
+            html += `<div class="subsection-header">${escapeHtml(line)}</div>\n`;
+        }
+        // ALL CAPS lines (important notices)
+        else if (trimmed.length > 10 && trimmed === trimmed.toUpperCase() && trimmed.match(/[A-Z]{5,}/)) {
+            html += `<div class="all-caps-notice">${escapeHtml(line)}</div>\n`;
+        }
+        // Definition terms in quotes
+        else if (trimmed.match(/^"[^"]+"/) || trimmed.match(/^"[^"]+"\s+means/)) {
+            html += `<div class="definition-line">${escapeHtml(line)}</div>\n`;
+        }
+        // List items with letters (a), (b), (c) or (i), (ii), (iii)
+        else if (trimmed.match(/^\([a-z]\)|^\([ivxlcdm]+\)/i)) {
+            html += `<div class="list-item">${escapeHtml(line)}</div>\n`;
+        }
+        // Emphasized phrases starting with specific keywords
+        else if (trimmed.match(/^(IMPORTANT|NOTE|WARNING|CRITICAL|FUNDAMENTAL|✓)/i)) {
+            html += `<div class="emphasis-line">${escapeHtml(line)}</div>\n`;
+        }
+        // Empty lines
+        else if (trimmed === '') {
+            html += `<div class="empty-line">&nbsp;</div>\n`;
+        }
+        // Regular lines
+        else {
+            html += `<div class="regular-line">${escapeHtml(line)}</div>\n`;
+        }
+    }
+    
+    return html;
+}

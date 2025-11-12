@@ -84,15 +84,103 @@ body {
 
 /* Terms Text Content */
 .terms-text {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 0.95rem;
-    line-height: 1.7;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 1.05rem;
+    line-height: 1.8;
     color: var(--text-color);
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
     margin: 0;
     padding: 0;
+}
+
+/* Document Header */
+.doc-header {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 1rem 0;
+    color: var(--header-bg);
+    letter-spacing: 0.5px;
+}
+
+/* Part Headers (PART A, PART B, etc.) */
+.part-header {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin: 2.5rem 0 1rem 0;
+    padding: 0.75rem 0;
+    border-bottom: 3px solid var(--header-bg);
+    color: var(--header-bg);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Section Headers (1. Title, 2. Title, etc.) */
+.section-header {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 2rem 0 0.75rem 0;
+    color: #2c3e50;
+    line-height: 1.4;
+}
+
+/* Subsection Headers (1.1, 5.2.1, etc.) */
+.subsection-header {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 1.5rem 0 0.5rem 0;
+    color: #34495e;
+    line-height: 1.4;
+}
+
+/* All Caps Notices */
+.all-caps-notice {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+    color: #856404;
+    line-height: 1.6;
+}
+
+/* Definition Lines */
+.definition-line {
+    font-size: 1.05rem;
+    margin: 0.5rem 0 0.5rem 1rem;
+    line-height: 1.7;
+    font-style: italic;
+}
+
+/* List Items */
+.list-item {
+    font-size: 1.05rem;
+    margin: 0.3rem 0 0.3rem 2rem;
+    line-height: 1.7;
+}
+
+/* Emphasis Lines */
+.emphasis-line {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 0.75rem;
+    background-color: #e7f3ff;
+    border-left: 4px solid #2c3e50;
+    line-height: 1.7;
+}
+
+/* Regular Lines */
+.regular-line {
+    font-size: 1.05rem;
+    margin: 0.2rem 0;
+    line-height: 1.8;
+}
+
+/* Empty Lines for Spacing */
+.empty-line {
+    margin: 0.5rem 0;
+    line-height: 1;
 }
 
 /* Footer and Back to Top Button */
@@ -146,9 +234,34 @@ body {
         border-radius: 6px;
     }
 
-    .terms-text {
-        font-size: 0.875rem;
-        line-height: 1.65;
+    .terms-text,
+    .regular-line,
+    .definition-line,
+    .list-item {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .doc-header {
+        font-size: 1.3rem;
+    }
+
+    .part-header {
+        font-size: 1.2rem;
+    }
+
+    .section-header {
+        font-size: 1.1rem;
+    }
+
+    .subsection-header {
+        font-size: 1.05rem;
+    }
+
+    .all-caps-notice,
+    .emphasis-line {
+        font-size: 0.95rem;
+        padding: 0.75rem;
     }
 
     .back-to-top {
@@ -169,8 +282,31 @@ body {
         border-radius: 0;
     }
 
-    .terms-text {
-        font-size: 0.8125rem;
+    .terms-text,
+    .regular-line,
+    .definition-line,
+    .list-item {
+        font-size: 0.9rem;
+    }
+
+    .doc-header {
+        font-size: 1.2rem;
+    }
+
+    .part-header {
+        font-size: 1.1rem;
+    }
+
+    .section-header {
+        font-size: 1.05rem;
+    }
+
+    .subsection-header {
+        font-size: 1rem;
+    }
+
+    .list-item {
+        margin-left: 1.5rem;
     }
 }
 
@@ -191,7 +327,38 @@ body {
         padding: 0;
     }
 
-    .terms-text {
+    .terms-text,
+    .regular-line,
+    .definition-line,
+    .list-item {
         font-size: 10pt;
+        line-height: 1.6;
+    }
+
+    .doc-header {
+        font-size: 14pt;
+    }
+
+    .part-header {
+        font-size: 13pt;
+        page-break-after: avoid;
+    }
+
+    .section-header {
+        font-size: 12pt;
+        page-break-after: avoid;
+    }
+
+    .subsection-header {
+        font-size: 11pt;
+        page-break-after: avoid;
+    }
+
+    .all-caps-notice,
+    .emphasis-line {
+        font-size: 10pt;
+        background-color: #f0f0f0 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
 }
