@@ -118,7 +118,7 @@ body {
 .section-header {
     font-size: 1.25rem;
     font-weight: 700;
-    margin: 1.1rem 0 0.5rem 0;
+    margin: 0.9rem 0 0.4rem 0;
     color: #2c3e50;
     line-height: 1.4;
 }
@@ -127,21 +127,24 @@ body {
 .subsection-header {
     font-size: 1.15rem;
     font-weight: 600;
-    margin: 0.8rem 0 0.3rem 0;
+    margin: 0.4rem 0 0.25rem 0;
     color: #34495e;
     line-height: 1.4;
 }
 
 /* All Caps Notices */
 .all-caps-notice {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     font-weight: 700;
     margin: 0.8rem 0;
-    padding: 0.6rem;
+    padding: 0.7rem 0.8rem;
     background-color: #fff3cd;
     border-left: 4px solid #ffc107;
     color: #856404;
-    line-height: 1.4;
+    line-height: 1.5;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
 
 /* Definition Lines */
@@ -164,10 +167,13 @@ body {
     font-size: 1.05rem;
     font-weight: 600;
     margin: 0.5rem 0;
-    padding: 0.5rem;
+    padding: 0.6rem 0.8rem;
     background-color: #e7f3ff;
     border-left: 4px solid #2c3e50;
-    line-height: 1.4;
+    line-height: 1.5;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
 
 /* Regular Lines */
