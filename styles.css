@@ -89,7 +89,7 @@ body {
 .terms-text {
     font-family: 'Georgia', 'Times New Roman', serif;
     font-size: 1.05rem;
-    line-height: 1.1;
+    line-height: 1.65;
     color: var(--text-color);
     margin: 0;
     padding: 0;
@@ -107,7 +107,7 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
-    margin: 0.1rem 0 0.1rem 0;
+    margin: 0.8rem 0 0.8rem 0;
     color: var(--header-bg);
     letter-spacing: 0.5px;
     word-wrap: break-word;
@@ -119,8 +119,8 @@ body {
 .part-header {
     font-size: 1.35rem;
     font-weight: 700;
-    margin: 0.1rem 0 0.05rem 0;
-    padding: 0.05rem 0;
+    margin: 2rem 0 1rem 0;
+    padding: 0.75rem 0;
     border-bottom: 3px solid var(--header-bg);
     color: var(--header-bg);
     text-transform: uppercase;
@@ -133,7 +133,7 @@ body {
 .section-header {
     font-size: 1.25rem;
     font-weight: 700;
-    margin: 0.05rem 0 0.02rem 0;
+    margin: 1.5rem 0 0.5rem 0;
     color: #2c3e50;
     line-height: 1.4;
     word-wrap: break-word;
@@ -144,7 +144,7 @@ body {
 .subsection-header {
     font-size: 1.15rem;
     font-weight: 600;
-    margin: 0.02rem 0 0.01rem 0;
+    margin: 1rem 0 0.3rem 0;
     color: #34495e;
     line-height: 1.4;
     word-wrap: break-word;
@@ -155,12 +155,12 @@ body {
 .all-caps-notice {
     font-size: 1.05rem;
     font-weight: 700;
-    margin: 0.05rem 0;
-    padding: 0.1rem 0.15rem;
+    margin: 1rem 0;
+    padding: 1rem 1.25rem;
     background-color: #fff3cd;
     border-left: 4px solid #ffc107;
     color: #856404;
-    line-height: 1.05;
+    line-height: 1.6;
     word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: normal;
@@ -171,8 +171,8 @@ body {
 /* Definition Lines */
 .definition-line {
     font-size: 1.05rem;
-    margin: 0.005rem 0 0.005rem 1rem;
-    line-height: 1.05;
+    margin: 0.4rem 0 0.4rem 1rem;
+    line-height: 1.65;
     font-style: italic;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -182,8 +182,8 @@ body {
 /* List Items */
 .list-item {
     font-size: 1.05rem;
-    margin: 0.005rem 0 0.005rem 2rem;
-    line-height: 1.05;
+    margin: 0.25rem 0 0.25rem 2rem;
+    line-height: 1.65;
     word-wrap: break-word;
     overflow-wrap: break-word;
     max-width: calc(100% - 2rem);
@@ -193,11 +193,11 @@ body {
 .emphasis-line {
     font-size: 1.05rem;
     font-weight: 600;
-    margin: 0.01rem 0;
-    padding: 0.05rem 0.1rem;
+    margin: 0.75rem 0;
+    padding: 0.75rem 1rem;
     background-color: #e7f3ff;
     border-left: 4px solid #2c3e50;
-    line-height: 1.05;
+    line-height: 1.6;
     word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: normal;
@@ -208,8 +208,8 @@ body {
 /* Regular Lines */
 .regular-line {
     font-size: 1.05rem;
-    margin: 0.005rem 0;
-    line-height: 1.05;
+    margin: 0.15rem 0;
+    line-height: 1.65;
     word-wrap: break-word;
     overflow-wrap: break-word;
     max-width: 100%;
@@ -217,8 +217,8 @@ body {
 
 /* Empty Lines for Spacing */
 .empty-line {
-    margin: 0.01rem 0;
-    line-height: 0.1;
+    margin: 0.4rem 0;
+    line-height: 0.5;
 }
 
 /* Footer and Back to Top Button */
